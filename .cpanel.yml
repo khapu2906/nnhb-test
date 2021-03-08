@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/dmkgipnkhosting/public_html/
+     - /bin/cp -rf repositories/nnhb $DEPLOYPATH
