@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0565)https://www.google.com.vn/search?hl=vi&sxsrf=ALeKk02mDSHBgRgVEkUKIE-bWVld1kOYAA%3A1597444397168&source=hp&ei=LRE3X-6BCOCFr7wPt8uY8A0&q=ddeems+key+php&oq=ddeems+key+php&gs_lcp=CgZwc3ktYWIQAzoECCMQJzoGCCMQJxATOggIABCxAxCLAzoFCAAQiwM6CwgAELEDEIMBEIsDOgUILhCLAzoCCAA6BQguELEDOg0IABCxAxCDARAKEIsDOggILhCxAxCLAzoOCC4QsQMQiwMQqAMQnAM6BAgAEAo6BAguEAo6BwgjELECECc6BggAEAoQHjoECAAQHjoGCAAQBRAeOgYIABAWEB46CAgAEBYQChAeOggIIRAWEB0QHjoFCCEQoAFQyAxYwiRg0CZoAHAAeACAAfwBiAH4DJIBBjEuMTIuMZgBAKABAaoBB2d3cy13aXq4AQI&sclient=psy-ab&ved=0ahUKEwiuzNuO4JvrAhXgwosBHbclBt4Q4dUDCAc&uact=5 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selection Detection Icon</title>
+<link type="text/css" rel="stylesheet" href="chrome-extension://amfojhdiedpdnlijjbhjnhokbnohfdfb/injected/nr-ext-dom/nr-ext-select-icon/nr-ext-select-icon.css"></head>
+<body>
+    <div class="nr-ext-icon">
+        <button id="readIcon" class="rs-btn-play">
+    </button></div>
+
+<div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"></div></body><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script></html>

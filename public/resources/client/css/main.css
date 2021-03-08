@@ -1,0 +1,568 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.content{
+	margin: auto;
+	position: relative;
+}
+/*dùng ảnh gif*/
+.loader{
+	width: 100%;
+	height: 100%;
+	background:#fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100000000000;
+	display: block;
+	overflow: hidden;
+}
+.loader img{
+	width: 25%;
+	height: 30%;
+	position: absolute; 
+	top: 50%;
+	left: 47.5%;
+	margin-top: -8%;
+	margin-left: -8%;
+}
+a{
+    text-decoration: none;
+}
+/*Header*/
+header{
+	background-color: #ffffff;
+	color: black;
+	min-height: 37px;
+	border-bottom:inset  ;
+	border-width: 1px;
+}
+header span{
+	border-left: solid 1px;
+	border-color: #ffffff;
+	font-size: 14px;
+}
+
+
+.login{
+	float: right;
+	margin-right: 10%;
+}
+.login button{
+	color: #ffffff ;
+	background-color: #4a552a;
+	border: #4a552a;
+}
+.logout{
+	float: right;
+	height: 100%;
+}
+.profile{
+	height: 100%;
+	float: right;
+}
+
+.logout button{
+	color: #ffffff ;
+	background-color: #4a552a;
+	border: #4a552a;
+}
+.profile button{
+	color: #4a552a ;
+	background-color: #ffffff ;
+	border: #ffffff ;
+}
+.logout button:hover{
+	color: #4a552a ;
+	background-color: #ffffff;
+}
+.profile button:hover{
+	color: #ffffff ;
+	background-color:#4a552a;
+}
+
+.login button:hover{
+	color: #4a552a ;
+	background-color: #ffffff;
+}
+@media only screen and (max-width:800px){
+	.login{
+		margin-right: 30%;
+	}
+}
+
+.cart{
+	float: right;
+
+}
+.cart button{
+	color: #4a552a;
+	background-color: #ffffff ;
+	border: #ffffff ;
+}
+/*Menu*/
+.menu {
+	background-color: #ffffff;
+	border-color: black ;
+	border-top-style: solid 2px;
+	color:#4a552a ;
+	z-index: 97;
+	border-bottom:inset  ;
+	border-width: 1px;
+}
+
+.menu ul{
+	text-align: center;
+	border-color: #4a552a;
+}
+
+.menu ul > li > a{
+	color:#4a552a ;
+	font-size: 16px;
+	font-family: Verdana;
+	margin-right:15px;
+	margin-left:15px;
+}
+
+.menu ul>li>a:active{
+	color: black; ;
+}
+.dropdown-item{
+	background-color:#fff;
+}
+.dropdown-item:hover{
+	background-color:#4a552a ;
+	color: #ffffff;
+}
+.menu .logo{
+	width:4%;
+	margin-left: 20%;
+	margin-right:10%
+}
+
+.menu .logo > a > img{
+	width:110%;
+}
+
+
+.menu  button{
+	color: black;
+}
+
+.dropdown-content {
+	margin-top: -0.1%;
+	width: 100%;
+	background-color: #ffff;
+	min-height: 300px;
+}
+
+.dropdown-detail-content{
+	margin-left: 2%;
+}
+
+.dropdown-item{
+	font-size: 14px;
+}
+
+.border-menu{
+	size: 10px;
+	color:#4a552a ;
+}
+
+#slide{
+	margin-top: -2%;
+}
+
+iframe{
+	margin-left:15%;
+	width: 70%
+}
+
+/*footer*/
+footer{
+	background-color: #333333;
+	color: #fff;
+}
+
+.coppy_right {
+	text-align: center;
+	padding:0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+.link_SO {
+	border-top: 1px solid #ffffff;
+	text-align: center;
+	font-size:25px;
+	padding:0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	
+}
+.login-button{
+	color: #ffffff ;
+	background-color: #4a552a;
+	border: #4a552a;
+}
+.login-button:hover{
+	color: #4a552a ;
+	background-color: #ffffff;
+	border: #4a552a;
+}
+
+@media only screen and (max-width: 768px){
+	.menu .logo{
+		text-align: center;
+		margin-right: 10%;
+		width: 90%;
+	}
+	.menu .logo > a >img{
+		width:60%;
+	}
+}	
+
+#cart {
+    /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 20%;
+    right: 0px;
+    z-index: 99;
+    /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border: none;
+    outline: none;
+    background-color: #eabd3c;
+    opacity: 0.8;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 9px;
+    border-radius:10% 0% 0% 10% ;
+    height: 50px;
+    width: 70px;
+}
+#cart:hover {
+	background-color: #eabd3c;
+	opacity: 1;
+}
+#Top {
+    display: none;
+    /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    z-index: 98;
+    /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border: none;
+    outline: none;
+    background-color: #4a552a ;
+    opacity: 0.6;
+    color: #ffffff ;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+    height: 50px;
+    width: 50px;
+}
+
+#Top:hover {
+	background-color: #4a552a ;
+	opacity: 1;
+}
+#space{
+	opacity: 0;
+}
+.title{
+	text-align: center;
+	font-family: Verdana;
+}
+#product:hover{
+	opacity: 0.8;
+}
+.product-card{
+	border: 0;
+}
+.product-card a{
+	color: black ;
+	text-align: center ;
+}
+.product-card p{
+	text-align: center ;
+}
+#title-link{
+	float: right;
+}
+#title-link a{
+	color: #4a552a ;
+}
+.wall-title{
+	size:100px;
+	color: #4a552a ;
+	
+}
+
+#catalogUL,ul  {
+    list-style-type: none;
+    padding-left: 5%;
+  }
+  
+  #catalogUL {
+    margin: 0;
+    padding: 0;
+    
+  }
+  #catalogUL li{
+      margin-left: 0;
+      font-size: 15px;
+  }
+  .nested {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+ }
+.title-link > a{
+	text-decoration: none;
+}
+.display-list a {
+	color:black;
+	text-decoration: none;
+}
+.pagination  .active{
+	background: #4a552a;
+}
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #4a552a;
+    border-color: #4a552a;
+}
+#title-child{
+	color: #666;
+	opacity: 0.5;
+}
+#loadMore{
+	background:#4a552a;
+	color:white;
+}
+#Cart{
+	display: none;
+    /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 0px;
+    right: 0%;
+    z-index: 100;
+    /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border-left: 0.5px solid;
+    background-color: white ;
+    color: black ;
+    cursor: pointer;
+    padding: 15px;
+    height: 100%;
+	width: 25%;
+	overflow: scroll;
+}
+.cart-title{
+	text-align: center;
+}
+#cart-close {
+	display:none;
+    /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 20%;
+    right: 25%;
+    z-index: 101;
+    /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border: none;
+    outline: none;
+    background-color: #eabd3c;
+    opacity: 0.8;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 9px;
+    border-radius:10% 0% 0% 10% ;
+    height: 50px;
+    width: 25px;
+}
+#overBack{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background:black;
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	overflow: hidden;
+}
+#closeCart{
+	border:0.5px solid;
+	border-radius: 10%;
+	background:black;
+	color:white;
+	float:right;
+	height: 35px;
+	width: 35px;
+	size: 2px;
+
+}
+.cartHr {
+	border:none;
+	border-top:1px dotted black;
+	color:#fff;
+	background-color:#fff;
+	height:1px;
+	width:100%;
+  }
+#checkCart{
+	background: #4a552a;
+	color:white;
+	width: 100%;
+}
+#pay{
+	background: #4a552a;
+	color:white;
+	width: 100%; 
+}
+#checkCart:hover{
+	border: 1px solid #4a552a;
+	background:white;
+	color:#4a552a;
+}
+#pay:hover{
+	border: 1px solid #4a552a;
+	background:white;
+	color:#4a552a;
+}
+#button-product{
+	text-align: center;
+}
+.addCart{
+	background: #4a552a;
+	color:white;
+	width: 100%;
+}
+#cart-product-image{
+	width: 50%;
+}
+#cart-product-image-full{
+	width: 100%;
+}
+.update-cart{
+	color: white;
+	background:#4a552a;
+	height: 30px;
+	width: 30px;
+	padding:1px 1px 1px 1px;
+	font-size:18px;
+}
+.quantum-buy{
+	width:70px
+}
+
+@media only screen and (max-width:1100px){
+	#Cart{
+		width: 350px;
+	}
+	
+	#cart-close {
+		right:350px
+	}
+	#cart-product-image{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width:770px){
+	#Cart{
+		width: 350px;
+	}
+	
+	#cart-close {
+		right:350px
+	}
+	#cart-product-image{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width:400px){
+	#cart-product-image{
+		width: 20%;
+	}
+}
+
+.id_search_product{
+	color:gray
+}
+
+#buttoncontent:hover{
+	color: #4a552a;
+}
+.info_customer{
+	border: 1px #4a552a solid;
+	color: black;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	min-height: 300px;
+}
+
+.info_customer:hover{
+	border: 1px #4a552a solid;
+	background-color: #4a552a;
+	color: white;
+}
+.info_customer .form-check{
+	top:5px;
+	float: left;
+	left:5px;
+}
+.form-check-input{
+	background:#4a552a;
+}
+#product_list_success_link{
+	color: #4a552a;
+}
+#product_image_tab{
+	height: 120px;
+}
+.product_image_tab_content{
+	height: 950px;
+}
+@media only screen and (max-width:1074px){
+	#product_image_tab{
+		width: 80px;
+		height: 80px;
+	}
+	.product_image_tab_content{
+		height: 600px;
+	}
+}
+@media only screen and (max-width:1024px){
+	#product_image_tab{
+		width: 70px;
+		height: 70px;
+	}
+	.product_image_tab_content{
+		height: 550px;
+	}
+}
+@media only screen and (max-width:770px){
+	#product_image_tab{
+		width: 50px;
+		height: 50px;
+	}
+	.product_image_tab_content{
+		height: 550px;
+	}
+}
+
+@media only screen and (max-width:400px){
+	#product_image_tab{
+		width: 35px;
+		height: 35px;
+	}
+	.product_image_tab_content{
+		height: 300px;
+	}
+}

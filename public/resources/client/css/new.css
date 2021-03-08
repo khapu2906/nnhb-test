@@ -1,0 +1,15 @@
+
+
+.head-index {
+	text-align:left;
+}
+.new-card{
+	border: 0;
+}
+.new-card a{
+	color: black ;
+	text-align: center ;
+}
+.new-card p{
+	text-align: center ;
+}
